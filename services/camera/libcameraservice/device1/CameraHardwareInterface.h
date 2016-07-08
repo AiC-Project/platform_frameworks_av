@@ -203,9 +203,11 @@ public:
      */
     void stopPreview()
     {
-        ALOGV("%s(%s)", __FUNCTION__, mName.string());
+        ALOGV("%s(%s) (disabled)", __FUNCTION__, mName.string());
+        /*
         if (mDevice->ops->stop_preview)
             mDevice->ops->stop_preview(mDevice);
+        */
     }
 
     /**
